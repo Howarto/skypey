@@ -1,9 +1,9 @@
 import React from 'react';
 import './css/Sidebar.css';
-import User from './User';
+import User from '../containers/User';
 
 const Sidebar = ({ contacts }) => {
-    return <aside className="sidebar">
+    return <aside className="Sidebar">
         {
             contacts.map( contact => (
                 <User key={ contact.user_id } user={ contact } />
